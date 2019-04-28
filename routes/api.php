@@ -33,4 +33,8 @@ Route::namespace('Api')->prefix('v1')->middleware('cors')->group(function () {
             Route::get('/logout','UserController@logout')->name('users.logout');
         });
     });
+
+    //多语言打印测试
+    Route::get('/dump','LangTestController@dump');
+
 });
